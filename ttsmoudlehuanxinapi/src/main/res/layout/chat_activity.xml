@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/toolbar_item"/>
+    <RelativeLayout
+        android:id="@+id/MsgEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:minHeight="@dimen/y80"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/RLET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true">
+
+            <Button
+                android:id="@+id/voice_btn"
+                android:layout_width="@dimen/x48"
+                android:layout_height="@dimen/y48"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x20"
+                android:background="@drawable/chatting_setmode_voice_btn"
+                android:onClick="doClick"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/keyboard_btn"
+                android:layout_width="@dimen/x48"
+                android:layout_height="@dimen/y48"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x6"
+                android:background="@drawable/chatting_setmode_keyboard_btn"
+                android:onClick="doClick"
+                android:visibility="invisible" />
+
+            <RelativeLayout
+                android:id="@+id/RLBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/x20"
+                android:layout_marginTop="@dimen/y20">
+
+                <Button
+                    android:id="@+id/more_btn"
+                    android:layout_width="@dimen/x48"
+                    android:layout_height="@dimen/y48"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/type_select_btn"
+                    android:onClick="doClick" />
+
+                <Button
+                    android:id="@+id/Send_btn"
+                    android:layout_width="@dimen/x120"
+                    android:layout_height="@dimen/y60"
+                    android:layout_centerInParent="true"
+                    android:background="@color/colorPrimary"
+                    android:onClick="doClick"
+                    android:text="发送"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/y28"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/ET_Msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/RLBtn"
+                android:layout_toRightOf="@id/voice_btn"
+                android:maxLength="50" />
+
+            <ImageView
+                android:id="@+id/iv_emoticons_normal"
+                android:layout_width="@dimen/x48"
+                android:layout_height="@dimen/y48"
+                android:layout_alignBottom="@+id/ET_Msg"
+                android:layout_alignRight="@+id/ET_Msg"
+                android:layout_alignTop="@+id/ET_Msg"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/x20"
+                android:clickable="true"
+                android:onClick="doClick"
+                android:scaleType="fitCenter"
+                android:src="@drawable/chatting_biaoqing_btn_normal"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/iv_emoticons_checked"
+                android:layout_width="@dimen/x48"
+                android:layout_height="@dimen/y48"
+                android:layout_alignBottom="@+id/ET_Msg"
+                android:layout_alignRight="@+id/ET_Msg"
+                android:layout_alignTop="@+id/ET_Msg"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/x20"
+                android:clickable="true"
+                android:onClick="doClick"
+                android:scaleType="fitCenter"
+                android:src="@drawable/chatting_biaoqing_btn_enable"
+                android:visibility="invisible" />
+
+            <LinearLayout
+                android:id="@+id/btn_press_to_speak"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="@dimen/y12"
+                android:layout_marginLeft="@dimen/x12"
+                android:layout_marginRight="@dimen/x12"
+                android:layout_marginTop="@dimen/y12"
+                android:layout_toLeftOf="@id/RLBtn"
+                android:layout_toRightOf="@id/voice_btn"
+                android:layout_weight="1"
+                android:background="@drawable/chat_press_speak_btn"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x10"
+                    android:text="@string/button_pushtotalk"
+                    android:textColor="#666666"
+                    android:textSize="@dimen/y26" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/RLExpression"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y300"
+            android:layout_below="@id/RLET"
+            android:visibility="gone">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/expressionPager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <GridView
+            android:id="@+id/RLMore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/RLET"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_marginRight="@dimen/x20"
+            android:numColumns="4"
+            android:visibility="gone"></GridView>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/MsgEdit"
+        android:layout_below="@id/title"
+        android:background="#FFFAFA"
+        android:orientation="vertical">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/chat_swipe_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:id="@+id/UserList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null"
+                android:dividerHeight="@dimen/y10"
+                android:listSelector="#00000000"></ListView>
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <RelativeLayout
+            android:id="@+id/recording_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/recording_hint_bg"
+            android:visibility="invisible">
+
+            <ImageView
+                android:id="@+id/mic_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/record_animate_01" />
+
+            <TextView
+                android:id="@+id/recording_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mic_image"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/y10"
+                android:text="@string/move_up_to_cancel"
+                android:textSize="@dimen/y20" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
