@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="moudle.project.tts.ttsmoudletakecashapi">
+
+    <application android:theme="@style/AppTheme">
+        <activity
+            android:name="tts.moudle.takecashapi.activity.TakeCashActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name="tts.moudle.takecashapi.activity.BankListActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name="tts.moudle.takecashapi.activity.BankAddActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+    </application>
+
+</manifest>

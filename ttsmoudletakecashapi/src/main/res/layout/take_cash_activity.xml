@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/RGB248_248_248"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_item" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/RlALlBank"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y200"
+                android:layout_marginTop="@dimen/y20"
+                android:background="@color/RGB255_255_255"
+                android:onClick="doClick">
+
+                <ImageView
+                    android:id="@+id/jhdjd"
+                    android:layout_width="@dimen/x18"
+                    android:layout_height="@dimen/y28"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x20"
+                    android:background="@drawable/next" />
+
+                <TextView
+                    android:id="@+id/jkdskd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x20"
+                    android:layout_toLeftOf="@id/jhdjd"
+                    android:text="更换"
+                    android:textSize="@dimen/y30" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:layout_toLeftOf="@id/jkdskd"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/bankName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:textSize="@dimen/y40" />
+
+                        <TextView
+                            android:id="@+id/name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/x20"
+                            android:textSize="@dimen/y30" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/endNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:textSize="@dimen/y30" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y140"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:text="可转出金额:"
+                    android:textSize="@dimen/y30" />
+
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x10"
+                    android:text="¥3000"
+                    android:textColor="@color/RGB80_80_80"
+                    android:textSize="@dimen/y34" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y80"
+                android:background="@color/RGB255_255_255"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:text="转出金额"
+                    android:textColor="@color/RGB80_80_80"
+                    android:textSize="@dimen/y30" />
+
+                <EditText
+                    android:id="@+id/take_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x10"
+                    android:background="@null"
+                    android:hint="请输入金额(¥)"
+                    android:inputType="numberDecimal"
+                    android:paddingLeft="@dimen/x10"
+                    android:textSize="@dimen/y34" />
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/okBtn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y100"
+                android:layout_marginLeft="@dimen/x40"
+                android:layout_marginRight="@dimen/x40"
+                android:layout_marginTop="@dimen/y150"
+                android:background="@color/RGB34_176_222"
+                android:onClick="doClick"
+                android:text="确定"
+                android:textColor="@color/RGB255_255_255"
+                android:textSize="@dimen/y30" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x20"
+                android:layout_marginRight="@dimen/x20"
+                android:layout_marginTop="@dimen/y40"
+                android:text="温馨提示：\n1. 提现前请仔细核对银行卡相关信息\n2. 提现将产生手续费，实际到账为[提现金额 - 手续费]，师傅平台账户扣款为[提现金额](注：提现至个人银行账户手续费为1元/笔；提现至单位   银行账户手续费为2元/笔)\n3. 当日15点之前的提现操作将在当日转入您的银行卡中，否则将在次日转入您的银行卡中\n4. 提现完成后，您可以进入我的账户查看余额"
+                android:textSize="@dimen/y30" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

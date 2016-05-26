@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y200"
+        android:layout_marginTop="@dimen/y20"
+        android:background="@color/RGB255_102_102"
+        android:gravity="center_vertical">
+
+        <Button
+            android:id="@+id/deleteBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/RGB255_102_102"
+            android:paddingLeft="@dimen/x10"
+            android:paddingRight="@dimen/x10"
+            android:text="删除"
+            android:textColor="@color/RGB255_255_255"
+            android:textSize="@dimen/y30" />
+
+        <View style="@style/view_height_style" />
+    </LinearLayout>
+</LinearLayout>
