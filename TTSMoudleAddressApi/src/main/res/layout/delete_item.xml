@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y145"
+        android:background="@color/RGB181_181_181"
+        android:gravity="center_vertical">
+
+        <Button
+            android:id="@+id/editBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/RGB181_181_181"
+            android:paddingLeft="@dimen/x10"
+            android:paddingRight="@dimen/x10"
+            android:text="编辑"
+            android:textColor="@color/RGB238_15_130"
+            android:textSize="@dimen/y30" />
+
+        <View style="@style/view_height_style" />
+
+        <Button
+            android:id="@+id/defaultBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/RGB181_181_181"
+            android:paddingLeft="@dimen/x10"
+            android:paddingRight="@dimen/x10"
+            android:text="设为默认"
+            android:textColor="@color/RGB238_15_130"
+            android:textSize="@dimen/y30" />
+
+        <View style="@style/view_height_style" />
+
+        <Button
+            android:id="@+id/deleteBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/RGB181_181_181"
+            android:paddingLeft="@dimen/x10"
+            android:paddingRight="@dimen/x10"
+            android:text="删除"
+            android:textColor="@color/RGB238_15_130"
+            android:textSize="@dimen/y30" />
+
+        <View style="@style/view_height_style" />
+    </LinearLayout>
+</LinearLayout>

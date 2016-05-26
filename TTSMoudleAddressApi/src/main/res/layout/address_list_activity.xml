@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/toolbar_item" />
+
+
+    <Button
+        android:id="@+id/addBtn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y100"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:onClick="doClick"
+        android:text="新建地址"
+        android:textColor="@color/RGB255_255_255"
+        android:textSize="@dimen/y30" />
+
+    <tts.moudle.api.widget.RecyclerViewAutoRefresh
+        android:id="@+id/addressList"
+        android:layout_below="@id/title"
+        android:layout_above="@id/addBtn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </tts.moudle.api.widget.RecyclerViewAutoRefresh>
+</RelativeLayout>
