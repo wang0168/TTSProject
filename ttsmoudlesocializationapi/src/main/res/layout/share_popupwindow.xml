@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b0000000">
+
+    <tts.moudle.api.widget.RecyclerViewAutoRefreshUpgraded
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y320"
+        android:layout_alignParentBottom="true"
+        android:background="@color/RGB255_255_255">
+
+    </tts.moudle.api.widget.RecyclerViewAutoRefreshUpgraded>
+
+</RelativeLayout>
