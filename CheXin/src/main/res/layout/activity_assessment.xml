@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="chexin.project.tts.chexin.activity.AssessmentActivity">
+
+    <include layout="@layout/toolbar_item" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y230">
+
+        <tts.moudle.api.widget.CircleImageView
+            android:id="@+id/img_face"
+            android:layout_width="@dimen/x65"
+            android:layout_height="@dimen/y65"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_marginTop="@dimen/y65" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_face"
+            android:layout_marginLeft="@dimen/x25"
+            android:text="老王"
+            android:textSize="@dimen/y30" />
+
+        <TextView
+            android:id="@+id/on_time"
+            android:layout_width="@dimen/x215"
+            android:layout_height="@dimen/y55"
+            android:layout_marginLeft="@dimen/x105"
+            android:layout_marginTop="@dimen/y30"
+            android:background="@drawable/shape_blue_frame"
+            android:gravity="center"
+            android:text="准时度"
+            android:textColor="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/service"
+            android:layout_width="@dimen/x215"
+            android:layout_height="@dimen/y55"
+            android:layout_below="@+id/on_time"
+            android:layout_marginLeft="@dimen/x105"
+            android:layout_marginTop="@dimen/y10"
+            android:background="@drawable/shape_blue_frame"
+            android:gravity="center"
+            android:text="服务态度"
+            android:textColor="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/intact"
+            android:layout_width="@dimen/x215"
+            android:layout_height="@dimen/y55"
+            android:layout_below="@+id/service"
+            android:layout_marginLeft="@dimen/x105"
+            android:layout_marginTop="@dimen/y10"
+            android:background="@drawable/shape_blue_frame"
+            android:gravity="center"
+            android:text="服务态度"
+            android:textColor="@color/colorPrimary" />
+
+        <RatingBar
+            android:id="@+id/bar_on_time"
+            style="@style/MyRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/on_time"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_toRightOf="@+id/on_time"
+            android:isIndicator="false"
+            android:numStars="5" />
+
+        <RatingBar
+            android:id="@+id/bar_service"
+            style="@style/MyRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/service"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_toRightOf="@+id/service"
+            android:isIndicator="false"
+            android:numStars="5" />
+
+        <RatingBar
+            android:id="@+id/bar_intact"
+            style="@style/MyRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/intact"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_toRightOf="@+id/intact"
+            android:isIndicator="false"
+            android:numStars="5"
+            android:rating="3"
+            android:stepSize="1" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="@dimen/x600"
+        android:layout_height="@dimen/y400"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/y40">
+
+        <EditText
+            android:id="@+id/edit_context"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_blue_frame"
+            android:gravity="top"
+            android:hint="说点什么吧"
+            android:padding="6dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="4dp"
+            android:layout_marginRight="4dp"
+            android:text="0/100"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btn_action"
+            android:layout_width="@dimen/x450"
+            android:layout_height="@dimen/y70"
+            android:layout_centerInParent="true"
+            android:background="@drawable/shape_blue_corners"
+            android:text="确认评价"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+</LinearLayout>

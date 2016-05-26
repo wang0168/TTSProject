@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/RGB255_255_255" />
+
+    <RelativeLayout
+        android:id="@+id/RlMe"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y200"
+        android:layout_marginTop="@dimen/y20"
+        android:background="@color/RGB255_255_255">
+
+        <tts.moudle.api.widget.CircleImageView
+            android:id="@+id/headImg"
+            android:layout_width="@dimen/x100"
+            android:layout_height="@dimen/y100"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x20" />
+
+        <ImageView
+            android:id="@+id/dmssddsds"
+            android:layout_width="@dimen/x18"
+            android:layout_height="@dimen/y28"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x20"
+            android:background="@drawable/next" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y100"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_toLeftOf="@id/dmssddsds"
+            android:layout_toRightOf="@id/headImg">
+
+            <TextView
+                android:id="@+id/header_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="老王"
+                android:textSize="@dimen/y30" />
+
+            <TextView
+                android:id="@+id/header_phone_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="15310342567"
+                android:textSize="@dimen/y30" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

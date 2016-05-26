@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="chexin.project.tts.chexin.activity.CompanyDetailActivity">
+
+    <include layout="@layout/toolbar_item" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:paddingBottom="@dimen/y40"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_company"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y320"
+                android:scaleType="fitXY"
+                android:src="@drawable/company" />
+
+            <TextView
+                android:id="@+id/company_name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y80"
+                android:gravity="center"
+                android:text="上海市XXX物流公司"
+                android:textColor="@color/black"
+                android:textSize="@dimen/y30" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y20"
+                android:background="@color/RGB248_248_248" />
+
+            <LinearLayout
+                android:id="@+id/layout_license"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/x20"
+                android:paddingRight="@dimen/x20"
+                android:paddingTop="@dimen/y20">
+
+                <Button
+                    android:layout_width="@dimen/x200"
+                    android:layout_height="@dimen/y60"
+                    android:layout_gravity="center_horizontal"
+                    android:background="#325df9"
+                    android:text="公司资质"
+                    android:textColor="@color/white" />
+
+                <LinearLayout
+                    android:id="@+id/layout_imgs1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y300"
+                    android:layout_marginTop="@dimen/y20"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/img1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:visibility="invisible" />
+
+                    <View
+                        android:layout_width="6dp"
+                        android:layout_height="match_parent" />
+
+                    <ImageView
+                        android:id="@+id/img2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:visibility="invisible" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_imgs2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y300"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/img3"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:visibility="invisible" />
+
+                    <View
+                        android:layout_width="6dp"
+                        android:layout_height="match_parent" />
+
+                    <ImageView
+                        android:id="@+id/img4"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:visibility="invisible" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y20"
+                android:background="@color/RGB248_248_248" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/x20"
+                android:paddingRight="@dimen/x20"
+                android:paddingTop="@dimen/y20">
+
+                <Button
+                    android:layout_width="@dimen/x200"
+                    android:layout_height="@dimen/y60"
+                    android:layout_gravity="center_horizontal"
+                    android:background="#325df9"
+                    android:clickable="false"
+                    android:text="公司详情"
+                    android:textColor="@color/white" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/y20">
+
+                    <TableRow style="@style/style_company_tablerow">
+
+                        <TextView
+                            style="@style/style_textview_company_detail"
+                            android:layout_weight="1.5"
+                            android:text="公司名称：" />
+
+                        <TextView
+                            android:id="@+id/tv_company_name"
+                            style="@style/style_tablerow_textview"
+                            android:layout_weight="5" />
+                    </TableRow>
+
+                    <TableRow style="@style/style_company_tablerow">
+
+                        <TextView
+                            style="@style/style_textview_company_detail"
+                            android:layout_weight="1.5"
+                            android:text="经营地址：" />
+
+                        <TextView
+                            android:id="@+id/tv_company_address"
+                            style="@style/style_tablerow_textview"
+                            android:layout_weight="5" />
+                    </TableRow>
+
+                    <TableRow style="@style/style_company_tablerow">
+
+                        <TextView
+                            style="@style/style_textview_company_detail"
+                            android:layout_weight="1.5"
+                            android:text="固定电话：" />
+
+                        <TextView
+                            android:id="@+id/tv_telephone1"
+                            style="@style/style_tablerow_textview"
+                            android:layout_weight="5" />
+                    </TableRow>
+
+                    <TableRow style="@style/style_company_tablerow">
+
+                        <TextView
+                            style="@style/style_textview_company_detail"
+                            android:layout_weight="1.5"
+                            android:text="固定电话：" />
+
+                        <TextView
+                            android:id="@+id/tv_telephone2"
+                            style="@style/style_tablerow_textview"
+                            android:layout_weight="5" />
+                    </TableRow>
+
+                    <TableRow style="@style/style_company_tablerow">
+
+                        <TextView
+                            style="@style/style_textview_company_detail"
+                            android:layout_weight="1.5"
+                            android:text="辐射城市：" />
+
+                        <TextView
+                            android:id="@+id/tv_citys"
+                            style="@style/style_tablerow_textview"
+                            android:layout_weight="5" />
+                    </TableRow>
+
+                    <TableRow style="@style/style_company_tablerow">
+
+                        <TextView
+                            style="@style/style_textview_company_detail"
+                            android:layout_weight="1.5"
+                            android:text="专线城市："
+                            android:textColor="#325df9" />
+
+                        <TextView
+                            android:id="@+id/special_citys"
+                            style="@style/style_tablerow_textview"
+                            android:layout_weight="5"
+                            android:textColor="#325df9" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

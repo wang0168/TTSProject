@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y100"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/txt_cheliang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x20"
+            android:text="车辆"
+            android:textColor="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/carCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_toRightOf="@id/txt_cheliang"
+            android:text="浙A32345"
+            android:textSize="@dimen/y30" />
+
+
+        <CheckBox
+            android:id="@+id/btn_check"
+            android:layout_width="@dimen/x86"
+            android:layout_height="@dimen/y44"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x20"
+            android:background="@drawable/push_button"
+            android:button="@null" />
+
+        <Button
+            android:id="@+id/btn_red"
+            android:layout_width="@dimen/x86"
+            android:layout_height="@dimen/y44"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x30"
+            android:layout_toLeftOf="@+id/btn_check"
+            android:background="@drawable/redbtn"
+            android:text="删除"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btn_blue"
+            android:layout_width="@dimen/x86"
+            android:layout_height="@dimen/y44"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x30"
+            android:layout_toLeftOf="@+id/btn_red"
+            android:background="@drawable/bluebtn"
+            android:text="修改"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y20" />
+</LinearLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/RGB248_248_248"
+    android:orientation="vertical"
+    tools:context="chexin.project.tts.chexin.activity.ContactUsActivity">
+
+    <include layout="@layout/toolbar_item" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y90"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+
+            style="@style/style_textview_black"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/x20"
+            android:text="公司官方电话：" />
+
+        <TextView
+            android:id="@+id/tv_official_phone_number"
+            style="@style/style_textview_black"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/x10" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y90"
+        android:layout_marginTop="@dimen/y20"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+
+            style="@style/style_textview_black"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/x20"
+            android:text="官方邮箱：" />
+
+        <TextView
+            android:id="@+id/tv_official_email"
+            style="@style/style_textview_black"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/x10" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y90"
+        android:layout_marginTop="@dimen/y20"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+
+            style="@style/style_textview_black"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/x20"
+            android:text="官方微信账号：" />
+
+        <TextView
+            android:id="@+id/tv_official_wechat"
+            style="@style/style_textview_black"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/x10" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y90"
+        android:layout_marginTop="@dimen/y20"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+
+            style="@style/style_textview_black"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/x20"
+            android:text="官方QQ号：" />
+
+        <TextView
+            android:id="@+id/tv_official_qq"
+            style="@style/style_textview_black"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/x10" />
+    </LinearLayout>
+</LinearLayout>

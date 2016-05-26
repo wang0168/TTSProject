@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+   >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y80"
+        android:layout_marginTop="@dimen/y20"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="@dimen/x130"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x50"
+            android:text="始发地:"
+            android:textSize="@dimen/y30" />
+
+        <RelativeLayout
+            android:layout_width="@dimen/x420"
+            android:layout_height="@dimen/y64"
+            android:background="@drawable/kuang">
+
+            <EditText
+                android:editable="false"
+                android:id="@+id/edit_from"
+                android:layout_width="@dimen/x350"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:background="@null" />
+
+            <Button
+                android:id="@+id/btn_from"
+                android:layout_width="@dimen/x64"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/xia2" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y80"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="@dimen/x130"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x50"
+            android:text="目的地:"
+            android:textSize="@dimen/y30" />
+
+        <RelativeLayout
+            android:layout_width="@dimen/x420"
+            android:layout_height="@dimen/y64"
+            android:background="@drawable/kuang">
+
+            <EditText
+                android:editable="false"
+                android:id="@+id/edit_to"
+                android:layout_width="@dimen/x350"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:background="@null" />
+
+            <Button
+                android:id="@+id/btn_to"
+                android:layout_width="@dimen/x64"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/xia2" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

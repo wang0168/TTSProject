@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@null"
+    android:orientation="vertical"
+    tools:context="chexin.project.tts.chexin.activity.StationActivity">
+
+    <include layout="@layout/toolbar_item" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y250"
+                android:background="@color/white"
+                android:paddingBottom="@dimen/y20"
+                android:paddingLeft="@dimen/x65"
+                android:paddingRight="@dimen/x65"
+                android:paddingTop="@dimen/y20">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/img_array_1"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/y120"
+                        android:layout_marginLeft="@dimen/x15"
+                        android:layout_marginRight="@dimen/x15"
+                        android:layout_weight="1"
+                        android:padding="@dimen/x15"
+                        android:src="@drawable/background_add2x" />
+
+                    <ImageButton
+                        android:id="@+id/img_array_2"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/y120"
+                        android:layout_marginLeft="@dimen/x15"
+                        android:layout_marginRight="@dimen/x15"
+                        android:layout_weight="1"
+                        android:padding="@dimen/x15"
+                        android:src="@drawable/background_add2x" />
+
+                    <ImageButton
+                        android:id="@+id/img_array_3"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/y120"
+                        android:layout_marginLeft="@dimen/x15"
+                        android:layout_marginRight="@dimen/x15"
+                        android:layout_weight="1"
+                        android:padding="@dimen/x15"
+                        android:src="@drawable/background_add2x" />
+
+                    <ImageButton
+                        android:id="@+id/img_array_4"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/y120"
+                        android:layout_marginLeft="@dimen/x15"
+                        android:layout_marginRight="@dimen/x15"
+                        android:layout_weight="1"
+                        android:padding="@dimen/x15"
+                        android:src="@drawable/background_add2x" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_upload_company_img"
+                    android:layout_width="@dimen/x400"
+                    android:layout_height="@dimen/y60"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/bluebtn"
+                    android:text="上传公司资质"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y20"
+                android:background="@color/RGB248_248_248" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y280"
+                android:background="@color/white"
+                android:paddingBottom="@dimen/y20"
+                android:paddingTop="@dimen/y20">
+
+                <ImageButton
+                    android:id="@+id/img_logo"
+                    android:layout_width="@dimen/x120"
+                    android:layout_height="@dimen/y120"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/background_add2x" />
+
+                <Button
+                    android:id="@+id/btn_upload_logo"
+                    android:layout_width="@dimen/x400"
+                    android:layout_height="@dimen/y60"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/bluebtn"
+                    android:text="添加企业LOGO/图片"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y20"
+                android:background="@color/RGB248_248_248" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/y200">
+
+                <include layout="@layout/layout_start_and_end" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y80"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="@dimen/x130"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x50"
+                        android:text="公司名称:"
+                        android:textSize="@dimen/y30" />
+
+                    <EditText
+                        android:id="@+id/edit_company_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y80"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="@dimen/x130"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x50"
+                        android:text="经营地址:"
+                        android:textSize="@dimen/y30" />
+
+                    <EditText
+                        android:id="@+id/edit_company_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y80"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="@dimen/x130"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x50"
+                        android:text="固定电话:"
+                        android:textSize="@dimen/y30" />
+
+                    <EditText
+                        android:id="@+id/edit_telephone1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y80"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="@dimen/x130"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x50"
+                        android:text="固定电话:"
+                        android:textSize="@dimen/y30" />
+
+                    <EditText
+                        android:id="@+id/edit_telephone2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y80"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="@dimen/x130"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x50"
+                        android:text="辐射城市:"
+                        android:textSize="@dimen/y30" />
+
+                    <EditText
+                        android:id="@+id/edit_radiation_city"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="可输入多个城市，已逗号隔开" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_action"
+                    android:layout_width="@dimen/x450"
+                    android:layout_height="@dimen/y70"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/y60"
+                    android:background="@drawable/shape_blue_solid"
+                    android:text="提交"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

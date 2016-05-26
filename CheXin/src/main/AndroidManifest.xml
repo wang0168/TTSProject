@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="chexin.project.tts.chexin">
+
+    <application
+        android:name=".BaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:overrideLibrary="com.bigkoo.pickerview">
+        <activity android:name=".activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity">
+
+        </activity>
+        <activity
+            android:name=".activity.carowner.ReleaseCarInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.goodsowner.ReleaseGoodsInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.carowner.RunningRouteListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.carowner.RunningRouteListenGoodsListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.carowner.RunningRouteAddActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.carowner.MyCarSourceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.goodsowner.MyGoodsSourceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.carowner.CarLongSettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.carowner.CarStateListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.carowner.MileageBudgetActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.HelperActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.carowner.MyCollectionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.goodsowner.MyCollectionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AssessmentListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.goodsowner.GoodsDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.carowner.CarDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.carowner.MyApplyListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.goodsowner.AcceptOrdersListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.goodsowner.GoodsOwnerInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.carowner.CarsOwnerInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.FindLineActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.StationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ContactUsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.FeedBackActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SoundSettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SystemInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.login.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.login.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.login.ForgetPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.LineListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CompanyDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.carowner.MyCarListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.carowner.AddCarActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.TrueNameActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.carowner.CarOrdersListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ModifyInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AssessmentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MyAccountActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.goodsowner.GoodsOrdersListActivity"
+            android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>

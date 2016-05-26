@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_item" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x20"
+        android:layout_marginTop="@dimen/y15"
+        android:text="建立账户需要手机号码完成验证"
+        android:textSize="@dimen/y28" />
+
+    <RelativeLayout
+        android:layout_width="@dimen/x600"
+        android:layout_height="@dimen/y90"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/y60"
+        android:background="@drawable/blue_frame">
+
+        <EditText
+            android:id="@+id/edit_user_type"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:editable="false"
+            android:hint="请选择注册账户类型"
+            android:paddingLeft="@dimen/x20"
+            android:textSize="@dimen/y28" />
+
+        <Button
+            android:id="@+id/btn_account_type"
+            android:layout_width="@dimen/x70"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/xia2" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/x600"
+        android:layout_height="@dimen/y90"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/y20"
+        android:background="@drawable/regeister_edit_phone"
+        android:gravity="center_vertical">
+
+        <EditText
+            android:id="@+id/ETMobile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/x90"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="请输入手机号码"
+            android:inputType="phone"
+            android:paddingLeft="@dimen/x20"
+            android:textSize="@dimen/y28" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="@dimen/x600"
+        android:layout_height="@dimen/y90"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/y20">
+
+
+        <EditText
+            android:id="@+id/ETVer"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/shape_blue_frame"
+            android:gravity="center_vertical"
+            android:hint="请输入验证码"
+            android:paddingLeft="@dimen/x20"
+            android:textSize="@dimen/y28" />
+
+        <Button
+            android:id="@+id/VerBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_weight="1"
+            android:background="@drawable/shape_green_corners"
+            android:onClick="doClick"
+            android:paddingRight="@dimen/x20"
+            android:text="获取验证码"
+            android:textColor="@color/RGB248_248_248"
+            android:textSize="@dimen/y30" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="@dimen/x600"
+        android:layout_height="@dimen/y90"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/y20"
+        android:background="@drawable/blue_frame"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/y80"
+            android:layout_height="@dimen/y80"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/icon_password" />
+
+        <EditText
+            android:id="@+id/ETPassword"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="请输入密码"
+            android:inputType="textPassword"
+            android:paddingLeft="@dimen/x20"
+            android:textSize="@dimen/y28" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/x20"
+            android:src="@drawable/eye_2x" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layout_checkbox"
+        android:layout_width="@dimen/x600"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/y10"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/chk_user_agreement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:checked="true" />
+
+        <TextView
+            android:id="@+id/txt_user_agreement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="同意本软件协议条款"
+            android:textColor="@color/btn_blue_normal"
+            android:textSize="@dimen/y22" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/regeisterBtn"
+        android:layout_width="@dimen/x450"
+        android:layout_height="@dimen/y80"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/x20"
+        android:layout_marginRight="@dimen/x20"
+        android:layout_marginTop="@dimen/y60"
+        android:background="@drawable/shape_blue_corners"
+        android:onClick="doClick"
+        android:text="提交注册"
+        android:textColor="@color/RGB255_255_255"
+        android:textSize="@dimen/y30" />
+</LinearLayout>

@@ -1,0 +1,103 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="tts_radio_button">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">@dimen/y80</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:drawablePadding">@dimen/y1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@drawable/textcolor_grey_white</item>
+        <item name="android:textSize">@dimen/y24</item>
+    </style>
+
+    <style name="text_car_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/y30</item>
+    </style>
+
+    <style name="text_common_style">
+        <item name="android:paddingLeft">@dimen/x20</item>
+        <item name="android:layout_width">@dimen/x420</item>
+        <item name="android:layout_height">@dimen/y64</item>
+        <item name="android:background">@drawable/kuang</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">@dimen/y30</item>
+    </style>
+
+    <style name="button_common_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/y80</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_marginLeft">@dimen/x20</item>
+        <item name="android:layout_marginRight">@dimen/x20</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:textColor">@color/RGB255_255_255</item>
+        <item name="android:textSize">@dimen/y30</item>
+    </style>
+
+    <style name="style_textview_black">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/y30</item>
+    </style>
+
+    <style name="style_textview_company_detail">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/y30</item>
+        <item name="android:paddingTop">@dimen/y10</item>
+        <item name="android:paddingBottom">@dimen/y10</item>
+    </style>
+
+    <style name="style_tablerow_textview">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/y30</item>
+    </style>
+
+    <style name="style_tablerow">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/y50</item>
+        <item name="android:layout_marginTop">@dimen/y20</item>
+    </style>
+
+    <style name="style_company_tablerow">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+
+    </style>
+
+    <style name="MyRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/my_ratingbar</item>
+        <item name="android:minHeight">@dimen/y20</item>
+        <item name="android:maxHeight">@dimen/y55</item>
+    </style>
+    <!--<style name="MyRatingBar_small" parent="?android:attr/ratingBarStyleSmall">-->
+        <!--<item name="android:progressDrawable">@drawable/my_ratingbar</item>-->
+        <!--<item name="android:minHeight">@dimen/y20</item>-->
+        <!--<item name="android:maxHeight">@dimen/y55</item>-->
+    <!--</style>-->
+</resources>

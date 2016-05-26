@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/RGB240_240_240"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_item" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y250">
+
+        <tts.moudle.api.widget.CircleImageView
+            android:id="@+id/img_face"
+            android:layout_width="@dimen/x160"
+            android:layout_height="@dimen/y160"
+            android:layout_centerInParent="true"
+            android:src="@drawable/default_face" />
+    </RelativeLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y90"
+        android:layout_marginLeft="@dimen/x70"
+        android:layout_marginRight="@dimen/x70"
+        android:gravity="center_vertical">
+
+
+        <EditText
+            android:id="@+id/ETMobile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/login_edit_account"
+            android:gravity="center_vertical"
+            android:hint="请输入手机号"
+            android:inputType="number"
+            android:paddingLeft="@dimen/x100"
+            android:textSize="@dimen/y28" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y90"
+        android:layout_marginLeft="@dimen/x70"
+        android:layout_marginRight="@dimen/x70"
+        android:layout_marginTop="@dimen/y20"
+        android:gravity="center_vertical">
+
+        <EditText
+            android:id="@+id/ETPassword"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/login_edit_possword"
+            android:gravity="center_vertical"
+            android:hint="请输入密码"
+            android:inputType="textPassword"
+            android:paddingLeft="@dimen/x100"
+            android:textSize="@dimen/y28" />
+    </LinearLayout>
+
+
+    <Button
+
+        android:id="@+id/loginBtn"
+        android:layout_width="@dimen/x450"
+        android:layout_height="@dimen/y80"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/y60"
+        android:background="@drawable/shape_green_corners"
+        android:onClick="doClick"
+        android:text="登录"
+        android:textColor="@color/RGB255_255_255"
+        android:textSize="@dimen/y30" />
+
+    <Button
+        android:id="@+id/regeisterBtn"
+        android:layout_width="@dimen/x450"
+        android:layout_height="@dimen/y80"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/y40"
+        android:background="@drawable/shape_blue_corners"
+        android:onClick="doClick"
+        android:text="注册帐号"
+        android:textColor="@color/RGB255_255_255"
+        android:textSize="@dimen/y30" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/x20"
+        android:layout_marginRight="@dimen/x20"
+        android:layout_marginTop="@dimen/y20">
+
+
+        <Button
+            android:id="@+id/forgetBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@null"
+            android:onClick="doClick"
+            android:text="忘记密码"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/y24" />
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/y220"
+    android:background="@color/white"
+    android:paddingLeft="@dimen/x20"
+    android:paddingRight="@dimen/x20">
+
+    <tts.moudle.api.widget.CircleImageView
+        android:id="@+id/img_face"
+        android:layout_width="@dimen/x114"
+        android:layout_height="@dimen/y114"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/img_face"
+        android:layout_marginLeft="@dimen/x50"
+        android:layout_toRightOf="@+id/img_face"
+        android:textSize="@dimen/y30" />
+
+    <TextView
+        android:id="@+id/tv_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/img_face"
+        android:layout_toRightOf="@+id/tv_name"
+        android:textSize="@dimen/y30"
+        android:visibility="gone" />
+
+    <RatingBar
+        android:id="@+id/ratingbar"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/img_face"
+        android:layout_alignLeft="@+id/tv_name"
+        android:layout_marginLeft="@dimen/x10"
+        android:layout_marginTop="@dimen/y10"
+        android:layout_toRightOf="@+id/img_face"
+        android:isIndicator="true"
+        android:numStars="5" />
+
+    <LinearLayout
+        android:id="@+id/layout_collect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/tv_name"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img_star"
+            android:layout_width="@dimen/x36"
+            android:layout_height="@dimen/y36"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/collect_star_null" />
+
+        <TextView
+            android:id="@+id/txt_collect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/x20"
+            android:gravity="center_vertical"
+            android:text="收藏"
+            android:textColor="@color/RGB239_68_29"
+            android:textSize="@dimen/y26" />
+
+        <TextView
+            android:id="@+id/tv_collect_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="6dp"
+            android:text="(17)"
+            android:textColor="@color/RGB239_68_29"
+            android:textSize="@dimen/y26" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_browse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/img_face"
+        android:layout_alignParentRight="true"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="@dimen/x36"
+            android:layout_height="@dimen/y36"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/eye_2x" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x20"
+            android:drawableLeft="@null"
+            android:drawablePadding="6dp"
+            android:gravity="center_vertical"
+            android:text="浏览"
+            android:textColor="@color/black"
+            android:textSize="@dimen/y26" />
+
+        <TextView
+            android:id="@+id/tv_browse_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:text="(25)"
+            android:textColor="@color/black"
+            android:textSize="@dimen/y26" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@null"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/toolbar_item" />
+
+    <tts.moudle.api.widget.RecyclerViewAutoRefreshUpgraded
+        android:id="@+id/routeList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title"
+        android:layout_weight="1">
+
+    </tts.moudle.api.widget.RecyclerViewAutoRefreshUpgraded>
+
+    <Button
+        android:id="@+id/addRouteBtn"
+        style="@style/button_common_style"
+        android:layout_marginBottom="@dimen/y20"
+        android:onClick="doClick"
+        android:text="新增路线" />
+</LinearLayout>

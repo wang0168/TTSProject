@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/RGB255_255_255">
+
+    <FrameLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="0dp"
+            android:layout_height="0dp"></FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/containertabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/y100"></FrameLayout>
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:visibility="gone"></TabWidget>
+
+        <RadioGroup
+            android:id="@+id/RGRadio"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y100"
+            android:layout_gravity="bottom"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <tts.moudle.api.widget.TTSRadioButton
+                android:id="@+id/homeBtn"
+                style="@style/tts_radio_button"
+                android:checked="true"
+                android:onClick="doClick"
+                android:text="首页"
+                app:heightSize="@dimen/y50"
+                app:ttsDrawableTop="@drawable/icon_home_normal"
+                app:ttsDrawableTop_check="@drawable/ico_home_select"
+                app:widthSize="@dimen/x50" />
+
+            <tts.moudle.api.widget.TTSRadioButton
+                android:id="@+id/goodsBtn"
+                style="@style/tts_radio_button"
+                android:text="查找货源"
+                android:textColor="@drawable/textcolor_grey_white"
+                app:heightSize="@dimen/y50"
+                app:ttsDrawableTop="@drawable/icon_goods_normal"
+                app:ttsDrawableTop_check="@drawable/icon_goods_select"
+                app:widthSize="@dimen/x50" />
+
+            <tts.moudle.api.widget.TTSRadioButton
+                android:id="@+id/carBtn"
+                style="@style/tts_radio_button"
+                android:onClick="doClick"
+                android:text="查找车源"
+                android:textSize="@dimen/y24"
+                app:heightSize="@dimen/y50"
+                app:ttsDrawableTop="@drawable/icon_car_normal"
+                app:ttsDrawableTop_check="@drawable/icon_car_select"
+                app:widthSize="@dimen/x50" />
+
+            <tts.moudle.api.widget.TTSRadioButton
+                android:id="@+id/meBtn"
+                style="@style/tts_radio_button"
+                android:onClick="doClick"
+                android:text="我的"
+                android:textSize="@dimen/y24"
+                app:heightSize="@dimen/y50"
+                app:ttsDrawableTop="@drawable/icon_me_normal"
+                app:ttsDrawableTop_check="@drawable/icon_me_select"
+                app:widthSize="@dimen/x50" />
+        </RadioGroup>
+    </FrameLayout>
+
+</TabHost>

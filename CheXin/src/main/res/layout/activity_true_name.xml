@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="chexin.project.tts.chexin.activity.TrueNameActivity">
+
+    <include layout="@layout/toolbar_item" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/x60"
+        android:paddingRight="@dimen/x60"
+        android:paddingTop="@dimen/y40">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y80"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="姓名："
+                android:textSize="@dimen/y30" />
+
+            <EditText
+                android:id="@+id/edit_true_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2.7"
+                android:background="@drawable/kuang"
+                android:hint="请输入您的真实姓名"
+                android:paddingLeft="4dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y80"
+            android:layout_marginTop="@dimen/y20"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="身份号码："
+                android:textSize="@dimen/y30" />
+
+            <EditText
+                android:id="@+id/edit_card_code"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2.7"
+                android:background="@drawable/kuang"
+                android:hint="请输入身份证号码"
+                android:paddingLeft="4dp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btn_action"
+                android:layout_width="@dimen/x420"
+                android:layout_height="@dimen/y80"
+                android:layout_centerInParent="true"
+                android:background="@drawable/shape_blue_corners"
+                android:text="认证"
+                android:textColor="@color/white"
+                android:textSize="@dimen/y30" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

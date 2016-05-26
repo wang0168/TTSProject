@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar_item" />
+
+        <include layout="@layout/layout_start_and_end" />
+
+        <LinearLayout
+            android:id="@+id/layout_gongliyunjia"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y80"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="@dimen/x130"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x50"
+                android:text="公里运价:"
+                android:textSize="@dimen/y30" />
+
+            <RelativeLayout
+                android:layout_width="@dimen/x420"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/edit_price"
+                    android:layout_width="@dimen/x420"
+                    android:layout_height="@dimen/y64"
+                    android:background="@drawable/kuang"
+                    android:gravity="center_vertical"
+                    android:inputType="numberDecimal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="4dp"
+                    android:text="元/公里" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_action"
+        style="@style/button_common_style"
+        android:layout_marginBottom="@dimen/y40"
+        android:text="预算"
+        android:textSize="@dimen/y30" />
+</RelativeLayout>

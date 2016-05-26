@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar_item" />
+
+        <include layout="@layout/layout_start_and_end" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_add_route"
+        style="@style/button_common_style"
+        android:layout_marginBottom="@dimen/y20"
+        android:text="新增路线" />
+
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/y30"
+    android:paddingLeft="@dimen/x20"
+    android:paddingRight="@dimen/x20"
+    android:paddingTop="@dimen/y30">
+
+    <tts.moudle.api.widget.CircleImageView
+        android:id="@+id/img_face"
+        android:layout_width="@dimen/x100"
+        android:layout_height="@dimen/y100" />
+
+    <TextView
+        android:id="@id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x20"
+        android:layout_toRightOf="@+id/img_face"
+        android:text="车新"
+        android:textSize="@dimen/y30" />
+
+    <TextView
+        android:id="@+id/context"
+        android:layout_width="@dimen/x500"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_marginLeft="@dimen/x20"
+        android:layout_marginTop="@dimen/y20"
+        android:layout_toRightOf="@+id/img_face"
+        android:background="@drawable/info_frame"
+        android:lineSpacingMultiplier="1.5"
+        android:minLines="8"
+        android:paddingLeft="35dp" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="2天前" />
+</RelativeLayout>

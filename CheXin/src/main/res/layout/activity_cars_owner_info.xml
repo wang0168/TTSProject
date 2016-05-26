@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/RGB248_248_248"
+    android:orientation="vertical"
+    tools:context="chexin.project.tts.chexin.activity.goodsowner.GoodsOwnerInfoActivity">
+
+    <include layout="@layout/toolbar_item" />
+
+
+    <include
+        layout="@layout/layout_info_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y220"
+        android:layout_marginTop="@dimen/y20" />
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y80"
+        android:layout_marginTop="@dimen/y20"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/x20"
+        android:paddingRight="@dimen/x20">
+
+        <TextView
+            android:id="@+id/txt_huoyuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:text="新的车源:"
+            android:textColor="#05e70b"
+            android:textSize="@dimen/y30" />
+
+        <TextView
+            android:id="@+id/tv_cheyuan_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@+id/txt_huoyuan"
+            android:text="2"
+            android:textColor="#05e70b"
+            android:textSize="@dimen/y30" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_toRightOf="@+id/tv_cheyuan_number"
+            android:text="条"
+            android:textColor="#05e70b"
+            android:textSize="@dimen/y30" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/green_right_icon2x" />
+    </RelativeLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/y20"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/x20"
+        android:paddingRight="@dimen/x20">
+
+        <TableRow style="@style/style_tablerow">
+
+            <TextView
+                style="@style/style_tablerow_textview"
+                android:layout_weight="1.7"
+                android:text="手机号码：" />
+
+            <TextView
+                android:id="@+id/tv_phone_number"
+                style="@style/style_tablerow_textview"
+                android:layout_weight="5" />
+        </TableRow>
+
+        <TableRow style="@style/style_tablerow">
+
+            <TextView
+                style="@style/style_tablerow_textview"
+                android:layout_weight="1.7"
+                android:text="车牌号码：" />
+
+            <TextView
+                android:id="@+id/tv_car_code"
+                style="@style/style_tablerow_textview"
+                android:layout_weight="5" />
+        </TableRow>
+
+        <TableRow style="@style/style_tablerow">
+
+            <TextView
+                style="@style/style_tablerow_textview"
+                android:layout_weight="1.7"
+                android:text="长跑线路：" />
+
+            <TextView
+                android:id="@+id/tv_route"
+                style="@style/style_tablerow_textview"
+                android:layout_weight="5" />
+        </TableRow>
+
+        <TableRow style="@style/style_tablerow">
+
+            <TextView
+                style="@style/style_tablerow_textview"
+                android:layout_weight="1.7"
+                android:text="拥有车辆：" />
+
+            <TextView
+                android:id="@+id/tv_car_count"
+                style="@style/style_tablerow_textview"
+                android:layout_weight="5" />
+        </TableRow>
+
+        <TableRow style="@style/style_tablerow">
+
+            <TextView
+                style="@style/style_tablerow_textview"
+                android:layout_weight="1.7"
+                android:text="车辆类型：" />
+
+            <TextView
+                android:id="@+id/tv_car_type"
+                style="@style/style_tablerow_textview"
+                android:layout_weight="5" />
+        </TableRow>
+
+        <TableRow style="@style/style_tablerow">
+
+            <TextView
+                style="@style/style_tablerow_textview"
+                android:layout_weight="1.7"
+                android:text="车辆长度：" />
+
+            <TextView
+                android:id="@+id/tv_car_long"
+                style="@style/style_tablerow_textview"
+                android:layout_weight="5" />
+        </TableRow>
+
+        <TableRow style="@style/style_tablerow">
+
+            <TextView
+                style="@style/style_tablerow_textview"
+                android:layout_weight="1.7"
+                android:text="车辆宽度：" />
+
+            <TextView
+                android:id="@+id/tv_car_width"
+                style="@style/style_tablerow_textview"
+                android:layout_weight="5" />
+        </TableRow>
+
+        <TableRow style="@style/style_tablerow">
+
+            <TextView
+                style="@style/style_tablerow_textview"
+                android:layout_weight="1.7"
+                android:text="车辆载重：" />
+
+            <TextView
+                android:id="@+id/tv_car_weight"
+                style="@style/style_tablerow_textview"
+                android:layout_weight="5" />
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>
