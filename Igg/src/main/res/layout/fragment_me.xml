@@ -1,0 +1,283 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f3f3f3"
+    android:orientation="vertical"
+    tools:context="tts.project.igg.MeFragment">
+
+    <include layout="@layout/toolbar_item" />
+
+    <RelativeLayout
+        android:id="@+id/layout_info_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y200"
+        android:background="#fdfdfe">
+
+        <tts.moudle.api.widget.CircleImageView
+            android:id="@+id/face"
+            android:layout_width="@dimen/x135"
+            android:layout_height="@dimen/y135"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x20" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_marginTop="@dimen/y60"
+            android:layout_toRightOf="@+id/face"
+            android:lines="1"
+            android:text="抬头仰望星空"
+            android:textSize="@dimen/y30" />
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_marginTop="@dimen/y20"
+            android:layout_toRightOf="@+id/face"
+            android:lines="1"
+            android:text="抬头仰望星空"
+            android:textSize="@dimen/y30" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x25"
+            android:src="@mipmap/jiantou_2x" />
+
+        <View
+            style="@style/view_width_style"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y140"
+        android:background="#fdfdfe"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <tts.moudle.api.widget.TTSRadioButton
+            android:id="@+id/all_order"
+            style="@style/tts_radio_button"
+            android:text="全部订单"
+            android:textColor="@color/RGB80_80_80"
+            app:heightSize="@dimen/y50"
+            app:ttsDrawableTop="@mipmap/quanbudingdan_2x"
+            app:ttsDrawableTop_check="@mipmap/quanbudingdan_2x"
+            app:widthSize="@dimen/x50" />
+
+        <tts.moudle.api.widget.TTSRadioButton
+            android:id="@+id/wait_pay"
+            style="@style/tts_radio_button"
+            android:text="待付款"
+            android:textColor="@color/RGB80_80_80"
+            app:heightSize="@dimen/y50"
+            app:ttsDrawableTop="@mipmap/daifukuan_2x"
+            app:ttsDrawableTop_check="@mipmap/daifukuan_2x"
+            app:widthSize="@dimen/x50" />
+
+        <tts.moudle.api.widget.TTSRadioButton
+            android:id="@+id/wait_post"
+            style="@style/tts_radio_button"
+            android:text="待发货"
+            android:textColor="@color/RGB80_80_80"
+            app:heightSize="@dimen/y50"
+            app:ttsDrawableTop="@mipmap/daifahuo_2x"
+            app:ttsDrawableTop_check="@mipmap/daifahuo_2x"
+            app:widthSize="@dimen/x50" />
+
+        <tts.moudle.api.widget.TTSRadioButton
+            android:id="@+id/wait_receive"
+            style="@style/tts_radio_button"
+            android:text="待收货"
+            android:textColor="@color/RGB80_80_80"
+            app:heightSize="@dimen/y50"
+            app:ttsDrawableTop="@mipmap/daishouhuo_2x"
+            app:ttsDrawableTop_check="@mipmap/daishouhuo_2x"
+            app:widthSize="@dimen/x50" />
+
+        <tts.moudle.api.widget.TTSRadioButton
+            android:id="@+id/wait_assess"
+            style="@style/tts_radio_button"
+            android:text="待评价"
+            android:textColor="@color/RGB80_80_80"
+            app:heightSize="@dimen/y50"
+            app:ttsDrawableTop="@mipmap/daipingjia_2x"
+            app:ttsDrawableTop_check="@mipmap/daipingjia_2x"
+            app:widthSize="@dimen/x50" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y20" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y170"
+        android:background="#fdfdfe"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <tts.moudle.api.widget.TTSRadioButton
+            android:id="@+id/my_integral"
+            style="@style/tts_radio_button"
+            android:layout_height="@dimen/y120"
+            android:text="我的积分"
+            android:textColor="@color/RGB80_80_80"
+            app:heightSize="@dimen/y50"
+            app:ttsDrawableTop="@mipmap/wodejifen_2x"
+            app:ttsDrawableTop_check="@mipmap/wodejifen_2x"
+            app:widthSize="@dimen/x50" />
+
+        <View style="@style/view_height_style" />
+
+        <tts.moudle.api.widget.TTSRadioButton
+            android:id="@+id/my_collection"
+            style="@style/tts_radio_button"
+            android:layout_height="@dimen/y120"
+            android:text="我的收藏"
+            android:textColor="@color/RGB80_80_80"
+            app:heightSize="@dimen/y50"
+            app:ttsDrawableTop="@mipmap/wodeshoucang_2x"
+            app:ttsDrawableTop_check="@mipmap/wodeshoucang_2x"
+            app:widthSize="@dimen/x50" />
+
+        <View style="@style/view_height_style" />
+
+        <tts.moudle.api.widget.TTSRadioButton
+            android:id="@+id/my_news"
+            style="@style/tts_radio_button"
+            android:layout_height="@dimen/y120"
+            android:text="我的消息"
+            android:textColor="@color/RGB80_80_80"
+            app:heightSize="@dimen/y50"
+            app:ttsDrawableTop="@mipmap/wodexiaoxi_2x"
+            app:ttsDrawableTop_check="@mipmap/wodexiaoxi_2x"
+            app:widthSize="@dimen/x50" />
+    </LinearLayout>
+
+    <View style="@style/view_width_style" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y170"
+        android:background="#fdfdfe"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <tts.moudle.api.widget.TTSRadioButton
+            android:id="@+id/my_address"
+            style="@style/tts_radio_button"
+            android:layout_height="@dimen/y120"
+            android:text="地址管理"
+            android:textColor="@color/RGB80_80_80"
+            app:heightSize="@dimen/y50"
+            app:ttsDrawableTop="@mipmap/dizhiguanli_2x"
+            app:ttsDrawableTop_check="@mipmap/dizhiguanli_2x"
+            app:widthSize="@dimen/x50" />
+
+        <View style="@style/view_height_style" />
+
+        <tts.moudle.api.widget.TTSRadioButton
+            style="@style/tts_radio_button"
+            android:textColor="@drawable/textcolor_grey_white"
+            app:heightSize="@dimen/y50"
+            app:widthSize="@dimen/x50" />
+
+        <View style="@style/view_height_style" />
+
+        <tts.moudle.api.widget.TTSRadioButton
+            style="@style/tts_radio_button"
+            android:textColor="@drawable/textcolor_grey_white"
+            app:heightSize="@dimen/y50"
+            app:widthSize="@dimen/x50" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y20" />
+
+    <RelativeLayout
+        android:id="@+id/layout_contact_us"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y80"
+        android:background="#fdfdfe"
+        android:paddingLeft="@dimen/x20"
+        android:paddingRight="@dimen/x20">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="联系我们" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/jiantou_2x" />
+
+        <View
+            style="@style/view_width_style"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_setting"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y80"
+        android:background="#fdfdfe"
+        android:paddingLeft="@dimen/x20"
+        android:paddingRight="@dimen/x20">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="系统设置" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/jiantou_2x" />
+
+        <View
+            style="@style/view_width_style"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y80"
+        android:background="#fdfdfe"
+        android:paddingLeft="@dimen/x20"
+        android:paddingRight="@dimen/x20">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="意见反馈" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/jiantou_2x" />
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,22 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="tts.project.igg.NewsFragment">
+
+    <ProgressBar
+        android:id="@+id/PBH5"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="0"
+        android:secondaryProgress="0" />
+
+    <WebView
+        android:id="@+id/WVH5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/PBH5" />
+</LinearLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/denglu_bg_2x"
+    android:orientation="vertical">
+
+    <!--<include layout="@layout/toolbar_item" />-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y90"
+        android:layout_marginLeft="@dimen/x60"
+        android:layout_marginRight="@dimen/x60"
+        android:layout_marginTop="@dimen/y475">
+
+        <EditText
+            android:inputType="phone"
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_login_edittext"
+            android:hint="输入用户名"
+            android:paddingLeft="@dimen/x130" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x45"
+            android:src="@mipmap/yonghu_2x" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y90"
+        android:layout_marginLeft="@dimen/x60"
+        android:layout_marginRight="@dimen/x60"
+        android:layout_marginTop="@dimen/y70">
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_login_edittext"
+            android:inputType="textPassword"
+            android:paddingLeft="@dimen/x130" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x45"
+            android:src="@mipmap/mima_2x" />
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/action_login"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y90"
+        android:layout_marginLeft="@dimen/x60"
+        android:layout_marginRight="@dimen/x60"
+        android:onClick="doClick"
+        android:layout_marginTop="@dimen/y75"
+        android:background="@mipmap/denglukuang_3x"
+        android:text="@string/text_login"
+        android:textColor="@color/white"
+        android:textSize="@dimen/y32" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x60"
+        android:layout_marginRight="@dimen/x60"
+        android:layout_marginTop="@dimen/y50"
+        android:padding="2dp">
+
+        <TextView
+            android:id="@+id/forget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="doClick"
+            android:paddingBottom="@dimen/y10"
+            android:paddingTop="@dimen/y10"
+            android:text="忘记密码?"
+            android:textColor="@color/white"
+            android:textSize="@dimen/y22" />
+
+        <TextView
+            android:id="@+id/registered"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:onClick="doClick"
+            android:paddingBottom="@dimen/y10"
+            android:paddingTop="@dimen/y10"
+            android:text="注册"
+            android:textColor="@color/white"
+            android:textSize="@dimen/y22" />
+    </RelativeLayout>
+</LinearLayout>

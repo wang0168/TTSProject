@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/y460"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/view_vertical_margin"
+    android:paddingLeft="@dimen/view_horizontal_margin"
+    android:paddingRight="@dimen/view_horizontal_margin"
+    android:paddingTop="@dimen/view_vertical_margin">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y60">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="虾仁的温度" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="2016-03-30" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@mipmap/xiaren"
+        android:scaleType="fitXY" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y65"
+        android:background="#f5f5f5">
+
+        <TextView
+            android:id="@+id/tv_integral"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="80积分" />
+
+        <TextView
+            android:id="@+id/tv_noidea"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_toRightOf="@+id/tv_integral"
+            android:gravity="center"
+            android:text="(0/2)" />
+
+        <TextView
+            android:id="@+id/tv_tags"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_toRightOf="@+id/tv_noidea"
+            android:drawableLeft="@mipmap/biaoqian_2x"
+            android:drawablePadding="@dimen/x10"
+            android:gravity="center"
+            android:text="美食" />
+
+        <TextView
+            android:id="@+id/tv_like"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:drawableLeft="@mipmap/dianzan_2x"
+            android:drawablePadding="@dimen/x10"
+            android:gravity="center"
+            android:text="23" />
+
+        <TextView
+            android:id="@+id/tv_talk"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/x20"
+            android:layout_toLeftOf="@+id/tv_like"
+            android:drawableLeft="@mipmap/pinglun_2x"
+            android:drawablePadding="@dimen/x10"
+            android:gravity="center"
+            android:text="23" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/y25"
+        android:paddingLeft="@dimen/x20"
+        android:paddingRight="@dimen/x20"
+        android:paddingTop="@dimen/y25">
+
+        <TextView
+            android:id="@+id/fare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="(含运费：￥0.00)" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/x30"
+            android:layout_toLeftOf="@+id/fare"
+            android:text="合计：￥79.5" />
+
+        <TextView
+            android:id="@+id/count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/x30"
+            android:layout_toLeftOf="@+id/price"
+            android:text="共2件商品" />
+
+        <Button
+            android:id="@+id/btn_assist"
+            android:layout_width="@dimen/x130"
+            android:layout_height="@dimen/y50"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/fare"
+            android:layout_marginTop="@dimen/y20"
+            android:background="@drawable/shape_button_assistcolor"
+            android:text="付款"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btn_blank_right"
+            android:layout_width="@dimen/x130"
+            android:layout_height="@dimen/y50"
+            android:layout_alignTop="@+id/btn_assist"
+            android:layout_below="@+id/fare"
+            android:layout_marginRight="@dimen/x20"
+            android:layout_toLeftOf="@+id/btn_assist"
+            android:background="@drawable/shape_button_blank"
+            android:text="付款"
+            android:textColor="@color/RGB80_80_80" />
+
+        <Button
+            android:id="@+id/btn_blank_left"
+            android:layout_width="@dimen/x130"
+            android:layout_height="@dimen/y50"
+            android:layout_alignTop="@+id/btn_assist"
+            android:layout_below="@+id/fare"
+            android:layout_marginRight="@dimen/x20"
+            android:layout_toLeftOf="@+id/btn_blank_right"
+            android:background="@drawable/shape_button_blank"
+            android:text="付款"
+            android:textColor="@color/RGB80_80_80" />
+    </RelativeLayout>
+</merge>

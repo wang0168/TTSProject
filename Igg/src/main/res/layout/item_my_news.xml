@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/y20"
+        android:paddingLeft="@dimen/x20"
+        android:paddingRight="@dimen/x20"
+        android:paddingTop="@dimen/y20">
+
+        <tts.moudle.api.widget.CircleImageView
+            android:id="@+id/face"
+            android:layout_width="@dimen/x110"
+            android:layout_height="@dimen/x110" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_marginTop="@dimen/y20"
+            android:layout_toRightOf="@+id/face"
+            android:text="系统通知"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/context"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_marginTop="@dimen/y20"
+            android:layout_toRightOf="@+id/face"
+            android:text="系统通知" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/title"
+            android:layout_below="@+id/title"
+            android:text="系统通知" />
+    </RelativeLayout>
+
+</LinearLayout>

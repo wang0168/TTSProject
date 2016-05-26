@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/RGB255_255_255">
+
+    <FrameLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="0dp"
+            android:layout_height="0dp"></FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/containertabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/y100"></FrameLayout>
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:visibility="gone"></TabWidget>
+
+        <RadioGroup
+            android:id="@+id/RGRadio"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y100"
+            android:layout_gravity="bottom"
+            android:background="@color/home_bottom_bar"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <tts.moudle.api.widget.TTSRadioButton
+                android:id="@+id/homeBtn"
+                style="@style/tts_radio_button"
+                android:checked="true"
+                android:text="首页"
+                app:heightSize="@dimen/y50"
+                app:ttsDrawableTop="@mipmap/shouye_2x"
+                app:ttsDrawableTop_check="@mipmap/shouye_h_2x"
+                app:widthSize="@dimen/x50" />
+
+            <tts.moudle.api.widget.TTSRadioButton
+                android:id="@+id/newsBtn"
+                style="@style/tts_radio_button"
+                android:text="资讯"
+                android:textColor="@drawable/textcolor_grey_white"
+                app:heightSize="@dimen/y50"
+                app:ttsDrawableTop="@mipmap/zixun_2x"
+                app:ttsDrawableTop_check="@mipmap/zixun_h_2x"
+                app:widthSize="@dimen/x50" />
+
+            <tts.moudle.api.widget.TTSRadioButton
+                android:id="@+id/cartBtn"
+                style="@style/tts_radio_button"
+                android:text="购物车"
+                android:textSize="@dimen/y24"
+                app:heightSize="@dimen/y50"
+                app:ttsDrawableTop="@mipmap/gouwuche_2x"
+                app:ttsDrawableTop_check="@mipmap/gouwuche_h_2x"
+                app:widthSize="@dimen/x50" />
+
+            <tts.moudle.api.widget.TTSRadioButton
+                android:id="@+id/meBtn"
+                style="@style/tts_radio_button"
+                android:text="个人中心"
+                android:textSize="@dimen/y24"
+                app:heightSize="@dimen/y50"
+                app:ttsDrawableTop="@mipmap/gerenzhongxin_2x"
+                app:ttsDrawableTop_check="@mipmap/gerenzhongxin_h_2x"
+                app:widthSize="@dimen/x50" />
+        </RadioGroup>
+    </FrameLayout>
+
+</TabHost>

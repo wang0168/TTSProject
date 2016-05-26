@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="@mipmap/zhuce_bg_2x"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y80"
+            android:layout_marginLeft="@dimen/x60"
+            android:layout_marginRight="@dimen/x60"
+            android:layout_marginTop="@dimen/y160">
+
+            <EditText
+                android:id="@+id/ETMobile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/shape_regeister_edittext"
+                android:hint="请输入您的手机号"
+                android:inputType="phone"
+                android:paddingLeft="@dimen/x80"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y80"
+            android:layout_marginLeft="@dimen/x60"
+            android:layout_marginRight="@dimen/x60"
+            android:layout_marginTop="@dimen/y60">
+
+            <EditText
+                android:id="@+id/ETVer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/shape_regeister_edittext"
+                android:hint="验证码"
+                android:inputType="textVisiblePassword"
+                android:paddingLeft="@dimen/x80"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white" />
+
+            <TextView
+                android:id="@+id/VerBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/x45"
+                android:gravity="center"
+                android:onClick="doClick"
+                android:text="发送验证码"
+                android:textColor="#ffa375" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y80"
+            android:layout_marginLeft="@dimen/x60"
+            android:layout_marginRight="@dimen/x60"
+            android:layout_marginTop="@dimen/y60">
+
+            <EditText
+                android:id="@+id/ETPassword"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/shape_regeister_edittext"
+                android:hint="密码(6~12位字母和数字的组合)"
+                android:inputType="textPassword"
+                android:paddingLeft="@dimen/x80"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y80"
+            android:layout_marginLeft="@dimen/x60"
+            android:layout_marginRight="@dimen/x60"
+            android:layout_marginTop="@dimen/y60">
+
+            <EditText
+                android:id="@+id/confirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/shape_regeister_edittext"
+                android:hint="确认密码"
+                android:inputType="textPassword"
+                android:paddingLeft="@dimen/x80"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/colorPrimary">
+
+        <CheckBox
+            android:id="@+id/chk_user_agreement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x100"
+            android:layout_marginTop="@dimen/y80"
+            android:button="@drawable/selector_regeister_checkbox"
+            android:checked="true"
+            android:paddingLeft="@dimen/x20"
+            android:textColor="#e6ebf1" />
+
+        <TextView
+            android:id="@+id/tv_user_agreement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/chk_user_agreement"
+            android:layout_toRightOf="@+id/chk_user_agreement"
+            android:paddingLeft="@dimen/x20"
+            android:text="我已阅读并同意爱广告《用户使用协议》"
+            android:textColor="#e6ebf1" />
+
+        <Button
+            android:id="@+id/action"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y90"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/x60"
+            android:layout_marginRight="@dimen/x60"
+            android:background="@drawable/shape_regeister_button"
+            android:onClick="doClick"
+            android:text="注册"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/y30" />
+    </RelativeLayout>
+</LinearLayout>

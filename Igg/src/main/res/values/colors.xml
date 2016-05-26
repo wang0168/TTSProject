@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#003e6f</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="RGB153_153_153">#999999</color>
+    <color name="home_bottom_bar">#f8f8f8</color>
+    <color name="RGB230_235_241">#e6ebf1</color>
+    <color name="RGB255_163_117">#ffa375</color>
+    <color name="activity_background">#f3f3f3</color>
+    <color name="assist_color">#f8925f</color>
+</resources>

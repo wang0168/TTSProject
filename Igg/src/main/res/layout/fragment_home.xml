@@ -1,0 +1,16 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="tts.project.igg.HomeFragment">
+
+    <include layout="@layout/toolbar_item" />
+
+    <tts.moudle.api.widget.RecyclerViewAutoRefreshUpgraded
+        android:id="@+id/home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></tts.moudle.api.widget.RecyclerViewAutoRefreshUpgraded>
+
+
+</LinearLayout>

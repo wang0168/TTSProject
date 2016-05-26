@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/y200"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/x20"
+        android:paddingLeft="@dimen/x20"
+        android:paddingRight="@dimen/x20"
+        android:paddingTop="@dimen/x20">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="@dimen/x150"
+            android:layout_height="@dimen/x150"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/img"
+            android:layout_marginLeft="@dimen/x40"
+            android:layout_toRightOf="@+id/img"
+            android:maxWidth="@dimen/x450"
+            android:minHeight="@dimen/y80"
+            android:text="还带点副科级啊司法所收购萨答复" />
+
+
+        <TextView
+            android:id="@+id/purpose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/img"
+            android:layout_marginLeft="@dimen/x40"
+            android:layout_toRightOf="@+id/img"
+            android:maxWidth="@dimen/x400"
+            android:text="￥39" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/img"
+            android:text="x1" />
+
+        <TextView
+            android:id="@+id/numeral"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/img"
+            android:layout_alignParentRight="true"
+            android:text="x1" />
+    </RelativeLayout>
+</LinearLayout>
