@@ -1,0 +1,22 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="tts.project.handi.activity.fragment.orders.WaitPayFragment">
+
+        <tts.moudle.api.widget.RecyclerViewAutoRefresh
+            android:visibility="visible"
+            android:id="@+id/recycleview_order_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+             />
+
+    <ImageView
+        android:id="@+id/no_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@mipmap/zwsj_2x"
+        android:visibility="gone" />
+
+</FrameLayout>

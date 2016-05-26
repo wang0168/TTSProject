@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/view_vertical_margin">
+
+    <TextView
+        android:id="@+id/text_service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="服务" />
+
+    <TextView
+        android:id="@+id/text_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_service"
+        android:text="2016/02/25" />
+
+    <ImageView
+        android:id="@+id/img_right_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:id="@+id/text_money_change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/img_right_btn"
+        android:text="+ ￥550.00" />
+
+    <TextView
+        android:id="@+id/text_money_balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_money_change"
+        android:layout_toLeftOf="@+id/img_right_btn"
+        android:text=" ￥550.00" />
+</RelativeLayout>

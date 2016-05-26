@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".activity.ChooseBrandsActivity">
+
+
+    <include layout="@layout/toolbar_item" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x20"
+        android:layout_marginTop="@dimen/y40"
+        android:drawableLeft="@mipmap/myd_2x"
+        android:drawablePadding="@dimen/x10"
+        android:paddingBottom="@dimen/y15"
+        android:gravity="center_vertical"
+        android:text="我的品牌" />
+
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y60"
+        android:background="@color/RGB238_238_238"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/x30"
+        android:text="上海市上海市浦东新区" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y120"
+        android:background="@color/white">
+
+        <Button
+            android:id="@+id/btn_action"
+            android:layout_width="@dimen/x450"
+            android:layout_height="@dimen/y60"
+            android:layout_centerInParent="true"
+            android:background="@color/themeFontsColor"
+            android:text="修改区域"
+            android:textColor="@color/white"
+            android:textSize="@dimen/y30" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y100"
+        android:background="@color/RGB238_238_238"
+        android:drawableLeft="@mipmap/pjj_2x"
+        android:drawablePadding="@dimen/x10"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/x20"
+        android:text="区域品牌" />
+
+    <tts.moudle.api.widget.RecyclerViewAutoRefresh
+        android:id="@+id/recycleview_brands"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
+
+

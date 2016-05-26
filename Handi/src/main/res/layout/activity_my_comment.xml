@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".activity.MyCommentActivity">
+
+    <include layout="@layout/toolbar_item"/>
+
+    <!--<include layout="@layout/header_my_comment" />-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x20"
+        android:layout_marginTop="@dimen/y40"
+        android:drawableLeft="@mipmap/myd_2x"
+        android:drawablePadding="@dimen/x10"
+        android:gravity="center_vertical"
+        android:text="本月用户满意度"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y200"
+        android:layout_marginLeft="@dimen/x20"
+        android:layout_marginTop="@dimen/y10">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@mipmap/comment_stars5"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@mipmap/comment_stars4"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@mipmap/comment_stars3"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:gravity="right|center_vertical"
+                android:paddingRight="@dimen/x20"
+                android:text="非常满意"
+                android:textSize="@dimen/y30"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:gravity="right|center_vertical"
+                android:paddingRight="@dimen/x20"
+
+                android:text="满意"
+                android:textSize="@dimen/y30"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:gravity="right|center_vertical"
+                android:paddingRight="@dimen/x20"
+                android:text="不满意"
+                android:textSize="@dimen/y30"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/x20">
+
+            <TextView
+                android:id="@+id/tv_very_satisfaction_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="@dimen/y30"/>
+
+            <TextView
+                android:id="@+id/tv_satisfaction_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="@dimen/y30"/>
+
+            <TextView
+                android:id="@+id/tv_dissatisfaction_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="@dimen/y30"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y100"
+        android:background="@color/RGB238_238_238"
+        android:drawableLeft="@mipmap/pjj_2x"
+        android:drawablePadding="@dimen/x10"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/x20"
+        android:text="用户评价"/>
+
+    <tts.moudle.api.widget.RecyclerViewAutoRefresh
+        android:id="@+id/recycleview_comment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</LinearLayout>

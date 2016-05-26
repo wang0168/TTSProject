@@ -1,0 +1,98 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="tts.project.handi.activity.fragment.HomeFragment">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y500"
+            android:fitsSystemWindows="true">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/collapsing_toolbar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:contentScrim="#30469b"
+                app:expandedTitleMarginStart="48dp"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                <include
+                    android:id="@+id/bannerView_layout"
+                    layout="@layout/banner_slider_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y390" />
+
+                <android.support.v7.widget.Toolbar
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y110"
+                    app:layout_collapseMode="pin">
+
+                </android.support.v7.widget.Toolbar>
+
+                <RelativeLayout
+                    android:id="@+id/rl_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y110"
+                    android:layout_gravity="bottom"
+                    android:background="@color/grayBackgroundColor">
+
+                    <RadioGroup
+                        android:layout_width="@dimen/x610"
+                        android:layout_height="@dimen/y75"
+                        android:layout_centerInParent="true"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rb_garb_orders"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/selector_home_top_button_left"
+                            android:button="@null"
+                            android:checked="true"
+                            android:gravity="center"
+                            android:text="@string/text_freedom_grab"
+                            android:textColor="@drawable/selector_home_top_text" />
+
+                        <RadioButton
+                            android:id="@+id/rb_task_orders"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/selector_home_top_button_right"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="@string/text_task_orders"
+                            android:textColor="@drawable/selector_home_top_text" />
+                    </RadioGroup>
+                </RelativeLayout>
+            </android.support.design.widget.CollapsingToolbarLayout>
+        </android.support.design.widget.AppBarLayout>
+
+        <tts.moudle.api.widget.RecyclerViewAutoRefresh
+            android:id="@+id/recycle_home"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        </tts.moudle.api.widget.RecyclerViewAutoRefresh>
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <ImageView
+        android:id="@+id/no_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@mipmap/zwsj_2x"
+        android:visibility="gone" />
+</LinearLayout>

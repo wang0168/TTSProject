@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">憨弟工匠</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_order_details">OrderDetailsActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_service_require">服务要求</string>
+    <string name="text_water_and_electricity_maintenance">水电维修</string>
+    <string name="text_store_info">商家信息</string>
+    <string name="text_owner_info">业主信息</string>
+    <string name="text_info_completion">资料完善</string>
+    <string name="text_service_settings">服务设置</string>
+    <string name="text_personal_account">我的钱包</string>
+    <string name="text_my_comment">我的评价</string>
+    <string name="text_about_us">关于我们</string>
+    <string name="text_feedback">意见反馈</string>
+    <string name="text_share">分享</string>
+    <string name="text_freedom_grab">自由抢单</string>
+    <string name="text_task_orders">任务接单</string>
+    <string name="text_home">首页</string>
+    <string name="text_order">订单</string>
+    <string name="text_my">我的</string>
+    <string name="text_name">姓名</string>
+    <string name="text_phone_number">手机号</string>
+    <string name="text_water_work">水工</string>
+    <string name="text_electricity_work">电工</string>
+    <string name="text_cement_work">泥工</string>
+    <string name="text_wood_work">木工</string>
+    <string name="text_paint_work">漆工</string>
+    <string name="text_save">保存</string>
+    <string name="text_true_but">true</string>
+    <string name="text_false_but">false</string>
+    <string name="text_submit">提交</string>
+
+</resources>

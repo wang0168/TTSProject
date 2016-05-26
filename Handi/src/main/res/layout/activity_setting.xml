@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/RGB238_238_238"
+    android:orientation="vertical"
+    tools:context="tts.project.handi.activity.SettingActivity">
+
+    <include layout="@layout/toolbar_item" />
+
+    <RelativeLayout
+        android:id="@+id/rl_about_us"
+        style="@style/style_personal_center_item"
+        android:layout_marginTop="@dimen/y20">
+
+
+        <TextView
+            style="@style/style_personal_center_textview"
+            android:layout_marginLeft="0dp"
+            android:text="@string/text_about_us" />
+
+        <ImageView style="@style/style_item_right_icon" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#6e6c6c" />
+
+    <RelativeLayout
+        android:id="@+id/rl_feedback"
+        style="@style/style_personal_center_item">
+
+
+        <TextView
+            style="@style/style_personal_center_textview"
+            android:layout_marginLeft="0dp"
+            android:text="@string/text_feedback" />
+
+        <ImageView style="@style/style_item_right_icon" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#6e6c6c" />
+
+    <RelativeLayout
+        android:id="@+id/rl_share"
+        style="@style/style_personal_center_item">
+
+
+        <TextView
+            style="@style/style_personal_center_textview"
+            android:layout_marginLeft="0dp"
+            android:text="@string/text_share" />
+
+        <ImageView style="@style/style_item_right_icon" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#6e6c6c" />
+
+    <RelativeLayout
+        android:id="@+id/clean"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y80"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/x20">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="清除缓存"
+            android:textSize="@dimen/y30" />
+
+        <TextView
+            android:id="@+id/cache_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x45"
+            android:layout_marginRight="@dimen/x10"
+            android:layout_toLeftOf="@+id/img_right_btn"
+            android:textColor="@color/themeFontsColor" />
+
+        <ImageView
+            android:id="@+id/img_right_btn"
+            style="@style/style_item_right_icon"
+            android:layout_marginRight="@dimen/x10" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#6e6c6c" />
+
+    <RelativeLayout
+        android:id="@+id/version"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y80"
+        android:layout_marginTop="2px"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/x20">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="当前版本"
+            android:textSize="@dimen/y30" />
+
+        <TextView
+            android:id="@+id/tv_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x45"
+            android:layout_marginRight="@dimen/x10"
+            android:layout_toLeftOf="@+id/img_right_btn2"
+            android:textColor="@color/themeFontsColor" />
+
+        <ImageView
+            android:id="@+id/img_right_btn2"
+            style="@style/style_item_right_icon"
+            android:layout_marginRight="@dimen/x10"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y90"
+        android:layout_marginTop="@dimen/y50"
+        android:background="@color/white"
+        android:text="退出登录"
+        android:textColor="@color/themeFontsColor"
+        android:textSize="@dimen/y40" />
+</LinearLayout>

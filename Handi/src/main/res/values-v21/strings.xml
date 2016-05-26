@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="text_service_require">服务要求</string>
+    <string name="text_water_and_electricity_maintenance">水电维修</string>
+    <string name="text_store_info">商家信息</string>
+    <string name="text_owner_info">业主信息</string>
+    <string name="text_info_completion">资料完善</string>
+    <string name="text_service_settings">服务设置</string>
+    <string name="text_personal_account">我的钱包</string>
+    <string name="text_my_comment">我的评价</string>
+    <string name="text_about_us">关于我们</string>
+    <string name="text_feedback">意见反馈</string>
+    <string name="text_share">分享</string>
+    <string name="text_freedom_grab">自由抢单</string>
+    <string name="text_task_orders">任务接单</string>
+</resources>

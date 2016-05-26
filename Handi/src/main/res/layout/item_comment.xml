@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/x20">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_comment_grade"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/y65"
+            android:background="@drawable/shape_comment_tag"
+            android:text="非常满意"
+            android:textColor="@color/themeFontsColor"
+            android:textSize="@dimen/y30" />
+    </LinearLayout>
+        <TextView
+            android:id="@+id/tv_comment_context"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y20"
+            android:text="师傅技术非常好，下次东西坏了我还会再找个这个师傅的，这次的服务给五星好评"
+            android:textColor="@color/black"
+            android:textSize="@dimen/y30" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/y20"
+            android:background="@color/RGB202_202_202" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y90"
+            android:paddingRight="@dimen/x40">
+
+            <tts.moudle.api.widget.CircleImageView
+                android:id="@+id/comment_face"
+                android:layout_width="@dimen/x65"
+                android:layout_height="@dimen/y65"
+                android:layout_centerVertical="true" />
+
+            <TextView
+                android:id="@+id/comment_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x10"
+                android:layout_toRightOf="@+id/comment_face" />
+        </RelativeLayout>
+
+
+</LinearLayout>

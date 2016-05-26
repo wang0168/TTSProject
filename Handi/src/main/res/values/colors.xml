@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/RGB34_176_222</color>
+    <color name="colorPrimaryDark">#1d9cc6</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="themeFontsColor">#00a0e9</color>
+    <color name="redFontsColor">#e60012</color>
+    <color name="grayFontsColor">#4a4a4a</color>
+    <color name="grayBackgroundColor">#efefef</color>
+    <color name="RGB126_126_126">#7e7e7e</color>
+    <color name="RGB123_123_123">#7b7b7b</color>
+    <color name="RGB97_97_97">#616161</color>
+    <color name="RGB139_139_139">#8b8b8b</color>
+    <color name="RGB238_238_238">#eeeeee</color>
+    <color name="RGB202_202_202">#cacaca</color>
+    <color name="RGB247_247_247">#f7f7f7</color>
+    <color name="RGB118_118_118">#767676</color>
+
+
+
+</resources>

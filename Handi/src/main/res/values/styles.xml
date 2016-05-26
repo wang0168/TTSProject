@@ -1,0 +1,119 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+        <item name="android:listDivider">@drawable/divider_bg</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    //订单详情文本框统一样式
+
+    <style name="style_order_textview">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:drawableLeft">@null</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">@dimen/y30</item>
+        <item name="android:layout_marginTop">@dimen/y20</item>
+
+    </style>
+
+
+    //个人中心顶部
+
+    <style name="personal_center_top">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/y30</item>
+    </style>
+
+
+    //订单中文本框统一样式
+
+    <style name="style_item_orders_textview">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">@dimen/y30</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:drawableLeft">@null</item>
+    </style>
+
+
+    //信息完善item容器统一样式
+
+    <style name="style_info_complete_rl">
+
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/y80</item>
+        <item name="android:padding">@dimen/view_vertical_margin</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+
+    //服务设置页面checkbox统一样式
+
+    <style name="style_service_setting_checkbox">
+        <item name="android:layout_width">@dimen/x180</item>
+        <item name="android:layout_marginLeft">@dimen/x60</item>
+        <item name="android:layout_height">@dimen/y80</item>
+        <item name="android:background">@drawable/selector_service_setting_checkbox</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@drawable/selector_home_top_text</item>
+        <item name="android:textSize">@dimen/y30</item>
+        <item name="android:checked">false</item>
+    </style>
+
+    <style name="style_personal_center_item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/y80</item>
+        <item name="android:paddingRight">@dimen/x20</item>
+        <item name="android:paddingLeft">@dimen/x20</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="style_item_right_icon">
+        <item name="android:layout_width">@dimen/x20</item>
+        <item name="android:layout_height">@dimen/y25</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:src">@mipmap/jt_2x</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="style_personal_center_textview">
+        <item name="android:textSize">@dimen/y30</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">@dimen/x45</item>
+    </style>
+
+    <style name="style_personal_center_left_icon">
+        <item name="android:layout_width">@dimen/x40</item>
+        <item name="android:layout_height">@dimen/y40</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="style_radiobutton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@drawable/selector_home_top_text</item>
+    </style>
+
+</resources>

@@ -1,0 +1,333 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/RGB238_238_238"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y240"
+        android:background="@color/white"
+        android:padding="@dimen/y16">
+
+        <tts.moudle.api.widget.CircleImageView
+            android:id="@+id/img_personal_center_face"
+            android:layout_width="@dimen/x125"
+            android:layout_height="@dimen/y125" />
+
+        <TextView
+            android:id="@+id/tv_personal_center_name"
+            style="@style/personal_center_top"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@+id/img_personal_center_face" />
+
+        <TextView
+            android:id="@+id/tv_personal_center_phone"
+            style="@style/personal_center_top"
+            android:layout_below="@+id/tv_personal_center_name"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_marginTop="@dimen/y20"
+            android:layout_toRightOf="@+id/img_personal_center_face" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y50"
+            android:layout_below="@+id/tv_personal_center_phone"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_marginTop="@dimen/y15"
+            android:layout_toRightOf="@+id/img_personal_center_face">
+
+            <TextView
+                android:id="@+id/tv_personal_center_orders"
+                style="@style/personal_center_top"
+                android:layout_centerVertical="true"
+                android:text="接单    次"
+                android:textColor="@color/RGB126_126_126" />
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="@dimen/y30"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x15"
+                android:layout_toRightOf="@+id/tv_personal_center_orders"
+                android:background="@color/RGB126_126_126" />
+
+            <TextView
+                android:id="@+id/tv_personal_center_grab"
+                style="@style/personal_center_top"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x30"
+                android:layout_toRightOf="@+id/tv_personal_center_orders"
+                android:text="抢单    次"
+                android:textColor="@color/RGB126_126_126" />
+
+            <View
+                android:visibility="gone"
+                android:layout_width="2dp"
+                android:layout_height="@dimen/y30"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x15"
+                android:layout_toRightOf="@+id/tv_personal_center_grab"
+                android:background="@color/RGB126_126_126" />
+
+
+            <!--<LinearLayout-->
+                <!--android:id="@+id/layout_personal_center_stars"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="@dimen/y30"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_marginLeft="@dimen/x30"-->
+                <!--android:visibility="gone"-->
+                <!--android:layout_toRightOf="@+id/tv_personal_center_grab"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/personal_center_star1"-->
+                    <!--android:layout_width="@dimen/x30"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_gravity="center_vertical"-->
+                    <!--android:src="@mipmap/wjxd_3x" />-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/personal_center_star2"-->
+                    <!--android:layout_width="@dimen/x30"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_gravity="center_vertical"-->
+                    <!--android:src="@mipmap/wjxd_3x" />-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/personal_center_star3"-->
+                    <!--android:layout_width="@dimen/x30"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_gravity="center_vertical"-->
+                    <!--android:src="@mipmap/wjxd_3x" />-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/personal_center_star4"-->
+                    <!--android:layout_width="@dimen/x30"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_gravity="center_vertical"-->
+                    <!--android:src="@mipmap/wjxd_3x" />-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/personal_center_star5"-->
+                    <!--android:layout_width="@dimen/x30"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_gravity="center_vertical"-->
+                    <!--android:src="@mipmap/wjxd_3x" />-->
+
+            <!--</LinearLayout>-->
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/y20"
+        android:orientation="vertical">
+        <!--<RelativeLayout-->
+            <!--android:id="@+id/rl_brands_settings"-->
+            <!--style="@style/style_personal_center_item">-->
+
+            <!--<ImageView-->
+                <!--style="@style/style_personal_center_left_icon"-->
+                <!--android:src="@mipmap/wdpj_3x" />-->
+
+            <!--<TextView-->
+                <!--style="@style/style_personal_center_textview"-->
+                <!--android:text="品牌设置" />-->
+
+            <!--<ImageView style="@style/style_item_right_icon" />-->
+
+        <!--</RelativeLayout>-->
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1px"-->
+            <!--android:background="#6e6c6c" />-->
+        <!--<RelativeLayout-->
+            <!--android:id="@+id/rl_service_settings"-->
+            <!--style="@style/style_personal_center_item">-->
+
+            <!--<ImageView-->
+                <!--style="@style/style_personal_center_left_icon"-->
+                <!--android:src="@mipmap/fwsz_3x" />-->
+
+            <!--<TextView-->
+                <!--style="@style/style_personal_center_textview"-->
+                <!--android:text="@string/text_service_settings" />-->
+
+            <!--<ImageView style="@style/style_item_right_icon" />-->
+
+        <!--</RelativeLayout>-->
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1px"-->
+            <!--android:background="#6e6c6c" />-->
+
+        <RelativeLayout
+            android:id="@+id/rl_info_completion"
+            style="@style/style_personal_center_item">
+
+            <ImageView
+                style="@style/style_personal_center_left_icon"
+                android:src="@mipmap/bjzl_3x" />
+
+            <TextView
+                style="@style/style_personal_center_textview"
+                android:layout_marginLeft="@dimen/x45"
+                android:text="@string/text_info_completion" />
+
+            <ImageView style="@style/style_item_right_icon" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#6e6c6c" />
+
+        <RelativeLayout
+            android:id="@+id/rl_personal_accout"
+            style="@style/style_personal_center_item">
+
+            <ImageView
+                style="@style/style_personal_center_left_icon"
+                android:src="@mipmap/grzh_3x" />
+
+            <TextView
+                style="@style/style_personal_center_textview"
+                android:layout_marginLeft="@dimen/x45"
+                android:text="@string/text_personal_account" />
+
+            <ImageView style="@style/style_item_right_icon" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#6e6c6c" />
+
+        <RelativeLayout
+            android:id="@+id/rl_my_comment"
+            style="@style/style_personal_center_item">
+
+            <ImageView
+                style="@style/style_personal_center_left_icon"
+                android:src="@mipmap/wdpj_3x" />
+
+            <TextView
+                style="@style/style_personal_center_textview"
+                android:layout_marginLeft="@dimen/x45"
+                android:text="@string/text_my_comment" />
+
+            <ImageView style="@style/style_item_right_icon" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#6e6c6c" />
+
+        <RelativeLayout
+            android:id="@+id/rl_my_recommend"
+            style="@style/style_personal_center_item">
+
+            <ImageView
+                style="@style/style_personal_center_left_icon"
+                android:src="@mipmap/wdtj_3x" />
+
+            <TextView
+                style="@style/style_personal_center_textview"
+                android:layout_marginLeft="@dimen/x45"
+                android:text="我的推荐" />
+
+            <ImageView style="@style/style_item_right_icon" />
+        </RelativeLayout>
+
+
+        <!--<RelativeLayout-->
+            <!--android:id="@+id/rl_about_us"-->
+            <!--style="@style/style_personal_center_item"-->
+            <!--android:layout_marginTop="@dimen/y20">-->
+
+            <!--<ImageView-->
+                <!--style="@style/style_personal_center_left_icon"-->
+                <!--android:src="@mipmap/gywm_3x" />-->
+
+            <!--<TextView-->
+                <!--style="@style/style_personal_center_textview"-->
+                <!--android:layout_marginLeft="@dimen/x45"-->
+                <!--android:text="@string/text_about_us" />-->
+
+            <!--<ImageView style="@style/style_item_right_icon" />-->
+        <!--</RelativeLayout>-->
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1px"-->
+            <!--android:background="#6e6c6c" />-->
+
+        <!--<RelativeLayout-->
+            <!--android:id="@+id/rl_feedback"-->
+            <!--style="@style/style_personal_center_item">-->
+
+            <!--<ImageView-->
+                <!--style="@style/style_personal_center_left_icon"-->
+                <!--android:src="@mipmap/yjfk_3x" />-->
+
+            <!--<TextView-->
+                <!--style="@style/style_personal_center_textview"-->
+                <!--android:layout_marginLeft="@dimen/x45"-->
+                <!--android:text="@string/text_feedback" />-->
+
+            <!--<ImageView style="@style/style_item_right_icon" />-->
+        <!--</RelativeLayout>-->
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1px"-->
+            <!--android:background="#6e6c6c" />-->
+
+        <!--<RelativeLayout-->
+            <!--android:id="@+id/rl_share"-->
+            <!--style="@style/style_personal_center_item">-->
+
+            <!--<ImageView-->
+                <!--style="@style/style_personal_center_left_icon"-->
+                <!--android:src="@mipmap/fx_3x" />-->
+
+            <!--<TextView-->
+                <!--style="@style/style_personal_center_textview"-->
+                <!--android:layout_marginLeft="@dimen/x45"-->
+                <!--android:text="@string/text_share" />-->
+
+            <!--<ImageView style="@style/style_item_right_icon" />-->
+        <!--</RelativeLayout>-->
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1px"-->
+            <!--android:background="#6e6c6c" />-->
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/y20"
+            android:id="@+id/rl_setting"
+            style="@style/style_personal_center_item">
+
+            <ImageView
+                style="@style/style_personal_center_left_icon"
+                android:src="@mipmap/fwsz_3x" />
+
+            <TextView
+                style="@style/style_personal_center_textview"
+                android:layout_marginLeft="@dimen/x45"
+                android:text="系统设置" />
+
+            <ImageView style="@style/style_item_right_icon" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>
+
